@@ -16,6 +16,9 @@
 
 ## 画面
 
+<img width="1260" height="2736" alt="Simulator Screenshot - iPhone Air - 2026-10-16 at 22 18 41" src="https://github.com/user-attachments/assets/24530787-7a20-4f0a-a343-2fe755025a9d" />
+<img width="1260" height="2736" alt="Simulator Screenshot - iPhone Air - 2026-10-16 at 22 19 56" src="https://github.com/user-attachments/assets/f378287a-ca90-4511-829a-2c360496cccb" />
+
 （スクリーンショットを貼る。GitHub の編集画面に画像をドラッグ＆ドロップすると貼れます。）
 
 ## 使った文法・技術
