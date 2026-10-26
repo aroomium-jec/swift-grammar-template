@@ -10,10 +10,16 @@
 
 ---
 
-## 箇所1：（例：品名を追加するボタンの処理）
-
-```swift
+## 箇所1：デッキ編成の画面を開くボタン <!-- [HomeView.swift の93〜99行目 (line 93)](/Users/cmstudent/Documents/授業26CM/1年後期/Swift/日専祭/ByonByonMen/ios/HackYou/HackYou/HomeView.swift:93)  -->
+```swift 
 // 該当部分のコードを抜粋して貼る（5〜15行くらい）
+NavigationLink {
+    DeckManagerView()
+} label: {
+    pairButton(title: "デッキ編成", subtitle: "", icon: "rectangle.stack.fill")
+}
+.buttonStyle(HomeTileStyle(aqua: aqua))
+.homeButtonSound()
 ```
 
 **何をしているか：**
@@ -27,10 +33,25 @@
 
 ---
 
-## 箇所2：（見出し）
+## 箇所2：音量を調整するスライダー <!-- [SettingsView.swift の38〜52行目 (line 38)](/Users/cmstudent/Documents/授業26CM/1年後期/Swift/日専祭/ByonByonMen/ios/HackYou/HackYou/SettingsView.swift:38) -->
 
 ```swift
 // コードを貼る
+private struct VolumeRow: View {
+    @Binding var value: Float
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "speaker.fill")
+                .foregroundStyle(.secondary)
+                .frame(width: 20)
+            Slider(value: $value, in: 0...1)
+            Image(systemName: "speaker.wave.3.fill")
+                .foregroundStyle(.secondary)
+                .frame(width: 24)
+        }
+        .padding(.vertical, 2)
+    }
 ```
 
 **何をしているか：**
@@ -41,10 +62,17 @@
 
 ---
 
-## 箇所3：（見出し）
+## 箇所3：新しいデッキを作って保存する処理<!-- [DeckStore.swift の138〜144行目 (line 138)](/Users/cmstudent/Documents/授業26CM/1年後期/Swift/日専祭/ByonByonMen/ios/HackYou/HackYou/DeckStore.swift:138) -->
 
 ```swift
 // コードを貼る
+@discardableResult
+func createDeck(name: String, faction: Faction) -> String {
+    let d = SavedDeck(name: name.isEmpty ? "新しいデッキ" : name, faction: faction)
+    decks.append(d)
+    save()
+    return d.id
+}
 ```
 
 **何をしているか：**
