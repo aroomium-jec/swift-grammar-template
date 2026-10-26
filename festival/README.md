@@ -1,6 +1,6 @@
 # 日専祭アプリ：（アプリ名をここに書く）
 
-> **チーム：** チーム：描描麺（26CM0116 蔣 卓 宏、26CM0119 髙橋樹、26CM0138 吉田香）
+> **チーム：** 描描麺（26CM0116 蔣 卓 宏、26CM0119 髙橋樹、26CM0138 吉田香）
 > **AI利用レベル：** 2（生成コード可）
 > **最終更新：** 2026-10-02
 
@@ -15,6 +15,9 @@
 絵はリアルタイムで共有され、回答や正解結果も全員に表示される。
 
 ## 画面
+
+<img width="1260" height="2736" alt="Simulator Screenshot - iPhone Air - 2026-10-16 at 22 18 41" src="https://github.com/user-attachments/assets/24530787-7a20-4f0a-a343-2fe755025a9d" />
+<img width="1260" height="2736" alt="Simulator Screenshot - iPhone Air - 2026-10-16 at 22 19 56" src="https://github.com/user-attachments/assets/f378287a-ca90-4511-829a-2c360496cccb" />
 
 （スクリーンショットを貼る。GitHub の編集画面に画像をドラッグ＆ドロップすると貼れます。）
 
